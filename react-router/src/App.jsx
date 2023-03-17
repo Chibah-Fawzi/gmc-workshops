@@ -27,16 +27,13 @@ function App() {
         <Link to={"/settings"}>
           Settings
         </Link>
-        <Link to={"cat/vetements"}>
-          test
-        </Link>
       </nav>
 
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/profile' element={<Profile />} />
+        <Route path='' element={<Home />} />
+        <Route path='profile' element={<Profile />} />
         <Route path='cat' element={<Category />} />
-        <Route path='/settings' element={
+        <Route path='settings' element={
           <PrivateRoute loggedIn={loggedIn}>
             <Settings />
           </PrivateRoute>
