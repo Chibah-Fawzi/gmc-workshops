@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+}
+
+nav a {
+  color: inherit;
+  font-size: 23px;
+  margin: 0 25px;
+  transition: all 0.3s;
+  font-weight: bolder;
+}
+nav i {
+  font-size: 35px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: bolder;
+  margin: 0 15px;
+}
+
+nav a:hover,
+nav i:hover {
+  color: var(--main-color);
+}
